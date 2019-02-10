@@ -1,0 +1,27 @@
+{
+  "name": "understanding-typescript",
+  "version": "1.0.0",
+  "description": "Understanding Typescript O'Reilly Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhatIfWeDigDeeper/understanding-typescript.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "WhatIfWeDigDeeper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhatIfWeDigDeeper/understanding-typescript/issues"
+  },
+  "homepage": "https://github.com/WhatIfWeDigDeeper/understanding-typescript#readme",
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
