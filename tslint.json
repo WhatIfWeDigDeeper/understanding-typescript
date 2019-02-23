@@ -1,0 +1,40 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint:recommended",
+      "tslint-plugin-prettier",
+      "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+      "prettier": [
+          true,
+          {
+              "tabWidth": 4,
+              "trailingComma": "es5",
+              "printWidth": 120
+          }
+      ],
+      "variable-name": [
+          true,
+          "ban-keywords",
+          "check-format",
+          "allow-leading-underscore"
+      ],
+      "interface-name": [
+          true,
+          "never-prefix"
+      ],
+      "max-classes-per-file": false,
+      "no-return-await": true,
+      "typedef": [
+          true,
+          "call-signature",
+          "parameter",
+          "member-variable-declaration"
+      ]
+  },
+  "rulesDirectory": [
+      "./node_modules/tslint-microsoft-contrib"
+  ]
+}
