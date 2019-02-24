@@ -153,7 +153,7 @@
   dependencies:
     "@types/jest-diff" "*"
 
-"@types/lodash@^4.14.110":
+"@types/lodash@^4.14.110", "@types/lodash@^4.14.121":
   version "4.14.121"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.121.tgz#9327e20d49b95fc2bf983fc2f045b2c6effc80b9"
 

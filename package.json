@@ -18,6 +18,7 @@
   "homepage": "https://github.com/WhatIfWeDigDeeper/understanding-typescript#readme",
   "devDependencies": {
     "@types/jest": "^24.0.6",
+    "@types/lodash": "^4.14.121",
     "jest": "^24.1.0",
     "jest-cli": "^24.1.0",
     "prettier": "^1.16.4",
@@ -34,5 +35,8 @@
     "doc": "typedoc --out docs/tsdocs lib/store-api/src",
     "test": "jest --env node --config ./jest.config.json",
     "tslint": "tslint --project tsconfig.json -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }
