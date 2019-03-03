@@ -1,11 +1,11 @@
 // add types
 
-export interface BankAccount {
+export type BankAccount {
     money: number;
     deposit: (val: number) => void;
 }
 
-export interface Person {
+export type Person {
     name: string;
     bankAccount: BankAccount;
     hobbies: string[];

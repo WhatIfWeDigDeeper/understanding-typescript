@@ -9,6 +9,9 @@
     "baseUrl": ".",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
   },
   "include": [
     "src/**/*.ts"
