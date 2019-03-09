@@ -19,8 +19,13 @@
   "devDependencies": {
     "@types/jest": "^24.0.6",
     "@types/lodash": "^4.14.121",
+    "eslint": "^5.15.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-react": "^7.12.4",
+    "install": "^0.12.2",
     "jest": "^24.1.0",
     "jest-cli": "^24.1.0",
+    "npm": "^6.8.0",
     "prettier": "^1.16.4",
     "ts-jest": "^24.0.0",
     "tslint": "^5.12.1",
@@ -31,12 +36,12 @@
     "typescript": "^3.3.3"
   },
   "scripts": {
-    "compile": "tsc --watch --project tsconfig.json",
+    "compile": "tsc --project tsconfig.json",
+    "compile.watch": "tsc --watch --project tsconfig.json",
     "doc": "typedoc --out docs/tsdocs lib/store-api/src",
-    "test": "jest --env node --config ./jest.config.json --watch",
+    "test": "jest --env node --config ./jest.config.json",
+    "test.watch": "jest --env node --config ./jest.config.json --watch",
     "tslint": "tslint --project tsconfig.json -c tslint.json 'src/**/*.ts' --fix"
   },
-  "dependencies": {
-    "lodash": "^4.17.11"
-  }
+  "dependencies": {}
 }

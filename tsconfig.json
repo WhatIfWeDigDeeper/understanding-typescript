@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2017",
     "module": "commonjs",
-    "lib": ["es6"],
+    "lib": ["es7"],
     "outDir": ".",
     "rootDir": ".",
     "strict": true,
@@ -10,8 +10,10 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "noImplicitAny": true,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "sourceMap": true,
+    "strictNullChecks": true
   },
   "include": [
     "src/**/*.ts"
