@@ -3,7 +3,7 @@
     "target": "es2017",
     "module": "commonjs",
     "lib": ["es7"],
-    "outDir": ".",
+    "outDir": "out",
     "rootDir": ".",
     "strict": true,
     "baseUrl": ".",

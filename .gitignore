@@ -1,5 +1,4 @@
-*.js
-*.js.map
+out/
 # Logs
 logs
 *.log
