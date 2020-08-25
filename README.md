@@ -51,6 +51,121 @@ class Person {
 }
 ```
 
+## Chapter 5: Classes & Interfaces
+
+Classes as blueprints
+
+### Interfaces
+
+Add readonly properties
+
+```typescript
+interface Greetable {
+  readonly name: string;
+}
+```
+
+```typescript
+// interface as function type
+// fn type more often used
+type AddFn = (a: number, b: number) => number;
+
+// alternative
+interface AddFun {
+  (a: number, b: number): number;
+}
+```
+
+can inherit multiple interfaces
+
+## Chapter 6: Advanced Types
+
+### Intersction types
+
+#### Object type intersection is combination
+
+```typescript
+type Employee = {
+  name: string;
+  startDate: Date;
+}
+
+type Admin = {
+  name: string;
+  privileges: string[];
+}
+
+type ElevatedEmployee = Employee & Admin;
+// combined, like extending interfaces
+```
+
+#### Union type intersection is actual intersction
+
+```typescript
+type Combinable = string | number;
+type Numeric = number | boolean;
+
+// number
+type Universal = Combinable & Numeric;
+```
+
+### Runtime Javascript type checking (type guards)
+
+```typescript
+// Runtime normal Javascript
+if (count typeof === 'number')
+
+// use in for object.properties check
+if ('privileges' in emp) {
+
+}
+// can't use typeof with object or type Employee as
+// it will always return typeof as 'object'
+if (emp typeof === 'object')
+// JS in check
+```
+
+```typescript
+// class can use instanceof
+if (vehicle instanceof Truck)
+// can't use interface as not at runtime
+```
+
+### Discriminated Unions
+
+add kind or type to interface
+one common property
+
+```typescript
+interface Bird {
+  kind: 'bird';
+  flyingSpeed: number;
+}
+
+interface Horse {
+  kind: 'horse';
+  runningSpeed: number;
+}
+
+type Animal = Bird | Horse;
+
+function moveAnimal(animal: Animal) {
+  let speed;
+  switch (animal.kind) {
+    case 'bird':
+      speed = animal.flyingSpeed;
+      break;
+    case 'horse':
+      speed = animal.runningSpeed;
+      break;
+  }
+  // tslint:disable-next-line no-console
+  console.log(`Moving at ${speed}`);
+}
+```
+
+### Index Properties
+
 ## Other resources
 
 [Typescript handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
